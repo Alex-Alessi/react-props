@@ -1,0 +1,83 @@
+body {
+  background-color: hsl(0deg 0% 89.8%);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+}
+
+/* #HEADER */
+
+header > .container {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* #MAIN */
+
+main > .container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+.card > .description {
+  padding: 20px;
+}
+
+.card > .description h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.card > .description p {
+  font-size: 14px;
+}
+
+.card button {
+  background-color: orange;
+  border-color: transparent;
+  height: 30px;
+  width: 100px;
+}
+
+.card button p {
+  margin-bottom: 0px;
+  color: white;
+  font-size: 1px;
+}
+
+.card > .img > img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+/* #FOOTER */
+
+footer {
+  background-color: hsl(0deg 0% 20%);
+  color: white;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 10px;
+}
