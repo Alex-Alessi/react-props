@@ -1,8 +1,13 @@
+import dogImage from "./img/dog.jpg";
+import mountainImage from "./img/mountain.jpg";
+import teaImage from "./img/tea.jpg";
+import lighthouseImage from "./img/lighthouse.jpg";
+
 export const posts = [
   {
     id: 1,
     title: "dog",
-    image: "./img/dog.jpg",
+    image: dogImage,
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
     tags: ["html", "css"],
@@ -11,7 +16,7 @@ export const posts = [
   {
     id: 2,
     title: "lighthouse",
-    image: "./img/lighthouse.jpg",
+    image: lighthouseImage,
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
     tags: ["js", "css"],
@@ -20,7 +25,7 @@ export const posts = [
   {
     id: 3,
     title: "mountain",
-    image: "/img/mountain.jpg",
+    image: mountainImage,
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
     tags: ["js", "php"],
@@ -29,7 +34,7 @@ export const posts = [
   {
     id: 4,
     title: "tea",
-    image: "/img/tea.jpg",
+    image: teaImage,
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
     tags: ["html"],

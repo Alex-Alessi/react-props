@@ -1,27 +1,45 @@
 import image from "/600x400.png";
 import { posts } from "../../assets/postsList.js";
+import TagList from "../TagList.jsx";
+
+const tagList = [];
+posts.forEach((post) => {
+  post.tags.forEach((tag) => {
+    if (!tagList.includes(tag)) tagList.push(tag);
+  });
+});
+console.log(tagList);
 
 export default function () {
   return (
     <main>
+      <TagList tags={tagList} />
       <div className="container">
-        <div className="card">
-          <div className="img">
-            <img src={image} />
-          </div>
-          <div className="description">
-            <h3>Titolo del post</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              perspiciatis distinctio voluptatem quia, magni, illo beatae labore
-              quasi laboriosam itaque fuga ab saepe est non vero id eos voluptas
-              architecto!
-            </p>
-            <button id="button">
-              <p>LEGGI DI PIÙ</p>
-            </button>
-          </div>
-        </div>
+        {posts
+          .filter((post) => post.published)
+          .map((post) => (
+            <div className="card" key={post.id}>
+              <div className="img">
+                <img src={post.image} alt={post.title} />
+              </div>
+              <div className="description">
+                <h3>{post.title}</h3>
+                <div className="tags">
+                  {post.tags.map((tag) => (
+                    <span className={`tag-${tag}`} key={tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <div className="content">
+                  <p>{post.content}</p>
+                </div>
+                <button id="button">
+                  <p>LEGGI DI PIÙ</p>
+                </button>
+              </div>
+            </div>
+          ))}
       </div>
     </main>
   );
