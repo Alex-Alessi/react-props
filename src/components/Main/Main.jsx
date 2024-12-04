@@ -1,4 +1,5 @@
 import image from "/600x400.png";
+import { posts } from "../../assets/postsList.js";
 
 export default function () {
   return (
