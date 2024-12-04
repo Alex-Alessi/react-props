@@ -1,8 +1,8 @@
 export const posts = [
   {
     id: 1,
-    title: "Titolo del Post",
-    image: "",
+    title: "dog",
+    image: "./img/dog.jpg",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
     tags: ["html", "css"],
@@ -10,8 +10,8 @@ export const posts = [
   },
   {
     id: 2,
-    title: "Titolo del Post",
-    image: "",
+    title: "lighthouse",
+    image: "./img/lighthouse.jpg",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
     tags: ["js", "css"],
@@ -19,8 +19,8 @@ export const posts = [
   },
   {
     id: 3,
-    title: "Titolo del Post",
-    image: "",
+    title: "mountain",
+    image: "/img/mountain.jpg",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
     tags: ["js", "php"],
@@ -28,8 +28,8 @@ export const posts = [
   },
   {
     id: 4,
-    title: "Titolo del Post",
-    image: "",
+    title: "tea",
+    image: "/img/tea.jpg",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
     tags: ["html"],
